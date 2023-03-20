@@ -19,6 +19,12 @@
 		display: none;
 	}
 }
+@media screen and (max-width: 767px) {
+	.header__nav--margin,
+	.header__right {
+		display: none;
+	}
+}
 
 .menu-toggle:hover,
 .menu-toggle:focus {
