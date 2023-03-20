@@ -1137,11 +1137,11 @@ header nav ul {
   right: 16px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .header__right {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     row-gap: 10px;
-    margin-left: 90px;
+    margin-left: calc(100vw - 680px);
   }
 }/*# sourceMappingURL=main.min.css.map */
