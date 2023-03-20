@@ -1094,6 +1094,10 @@ header nav ul {
   color: #fff;
 }
 
+body {
+  min-width: 480px;
+}
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
