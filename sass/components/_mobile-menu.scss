@@ -30,12 +30,12 @@
 .menu-toggle:focus {
 	background-color: rgba(0, 0, 0, 0.1);
 }
-
-.menu-container .menu-toggle {
+//.menu-container .menu-toggle - oryg...
+.menu-toggle {
 	position: absolute;
 	top: 16px;
 	right: 16px;
-	color: #fff;
+	//color: #fff;
 }
 
 @media screen and (min-width: 768px) {

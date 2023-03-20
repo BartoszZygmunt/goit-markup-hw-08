@@ -1131,11 +1131,10 @@ header nav ul {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.menu-container .menu-toggle {
+.menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
