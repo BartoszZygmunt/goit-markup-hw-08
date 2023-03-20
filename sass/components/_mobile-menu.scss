@@ -37,3 +37,11 @@
 	right: 16px;
 	color: #fff;
 }
+
+@media screen and (min-width: 768px) {
+	.header__right {
+		flex-wrap: wrap;
+		row-gap: 10px;
+		margin-left: 90px;
+	}
+}
