@@ -1,0 +1,35 @@
+header a:hover,
+footer a:hover,
+menu:hover {
+	color: getColor(accent-color);
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.no-padding-top {
+	padding-top: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+header nav ul {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.section__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: getColor(main-text-color);
+	margin-bottom: 50px;
+}

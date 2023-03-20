@@ -1,0 +1,22 @@
+$colors: (
+	"main-text-color": #212121,
+	"secondary-text-color": #fff,
+	"owner-text-color": #757575,
+	"accent-color": #2196f3,
+	"contener-color": #eeeeee,
+	"logo-color-text": #000,
+	"buttons-port-color": #f5f4fa,
+	"footer-text-color": rgba(255, 255, 255, 0.6),
+	"background-footer-color": #2f303a,
+	"background-section": #e5e5e5,
+	"line-color": #ececec,
+	"background-color": #fff,
+	"icon-color": #afb1b8,
+	"form-background-color": #fff,
+);
+
+$main-font: "Roboto", sans-serif;
+
+@function getColor($key) {
+	@return map-get($colors, $key);
+} ;

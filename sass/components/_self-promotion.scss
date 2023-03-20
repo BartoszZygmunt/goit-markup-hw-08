@@ -1,0 +1,37 @@
+.self-promotion {
+	display: flex;
+	gap: 30px;
+
+	& li {
+		flex-basis: 270px;
+	}
+}
+
+.self-promotion__icons-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+	fill: getColor(buttons-port-color);
+	background-color: getColor(buttons-port-color);
+	border-radius: 4px;
+	height: 112px;
+}
+
+.self-promotion__label {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+.self-promotion__text {
+	line-height: 1.71;
+	color: getColor(owner-text-color);
+	margin-top: 10px;
+}
+
+.self-promotion__icons {
+	width: 70px;
+	height: 70px;
+}

@@ -1,0 +1,40 @@
+.socials__icons {
+	fill: currentColor;
+	width: 20px;
+	height: 20px;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		fill: getColor(background-color);
+	}
+}
+
+.socials {
+	display: flex;
+	justify-content: center;
+	margin-top: 16px;
+	gap: 10px;
+
+	& > li {
+		box-shadow: none;
+
+		& > a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 44px;
+			height: 44px;
+			padding: 12px;
+			border-radius: 50%;
+			color: getColor(icon-color);
+			transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+			&:hover,
+			&:focus {
+				background-color: getColor(accent-color);
+				color: getColor(background-color);
+			}
+		}
+	}
+}

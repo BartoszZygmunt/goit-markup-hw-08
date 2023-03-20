@@ -1,0 +1,35 @@
+.icons-clients {
+	width: 106px;
+	height: 60px;
+	fill: currentColor;
+}
+
+.ul-clients {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	flex-wrap: wrap;
+
+	& > li:hover,
+	& > li:focus {
+		color: getColor(accent-color);
+	}
+
+	& > li > a {
+		border: 1px solid currentColor;
+		color: getColor(icon-color);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 170px;
+		height: 92px;
+		border-radius: 4px;
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover,
+		&:focus {
+			color: var(--accent-color);
+		}
+	}
+}
