@@ -1,4 +1,6 @@
 @use "utils/vars" as *;
+@import "components/mixins";
+
 @import "components/buttons";
 @import "components/clients";
 @import "components/footer";
