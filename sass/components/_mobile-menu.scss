@@ -83,6 +83,18 @@
 	height: 100%;
 	padding: 48px 40px;
 }
+.mobile-menu__list {
+	margin-bottom: 32px;
+}
+.mobile-menu__link {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 47px;
+	letter-spacing: 0.02em;
+	color: getColor(main-text-color);
+}
 
 // .menu-container .menu-toggle {
 // 	position: absolute;
