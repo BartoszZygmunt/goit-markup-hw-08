@@ -125,10 +125,17 @@
 	letter-spacing: 0.02em;
 	color: getColor(owner-text-color);
 }
-
-// .menu-container .menu-toggle {
-// 	position: absolute;
-// 	top: 16px;
-// 	right: 16px;
-// 	color: #fff;
-// }
+.mobile-menu-socials__container {
+	display: flex;
+	row-gap: 10px;
+}
+.mobile-menu-socials__link {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.22;
+	letter-spacing: 0.02em;
+	color: getColor(accent-color);
+	margin-right: 10px;
+}

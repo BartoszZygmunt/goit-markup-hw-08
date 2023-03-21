@@ -1290,4 +1290,22 @@ header nav ul {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.mobile-menu-socials__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 10px;
+}
+
+.mobile-menu-socials__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-right: 10px;
 }/*# sourceMappingURL=main.min.css.map */
