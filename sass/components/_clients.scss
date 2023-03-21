@@ -7,7 +7,7 @@
 .ul-clients {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	gap: 30px;
 	flex-wrap: wrap;
 
@@ -30,6 +30,12 @@
 		&:hover,
 		&:focus {
 			color: var(--accent-color);
+		}
+		@include mq(tablet, max) {
+			width: 210px;
+		}
+		@include mq(desktop, max) {
+			width: 226px;
 		}
 	}
 }

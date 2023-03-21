@@ -1,4 +1,66 @@
 @charset "UTF-8";
+header a:hover,
+footer a:hover,
+menu:hover {
+  color: #2196f3;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.no-padding-top {
+  padding-top: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
 button {
   display: block;
   cursor: pointer;
@@ -59,9 +121,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -89,6 +151,16 @@ button {
 }
 .ul-clients > li > a:hover, .ul-clients > li > a:focus {
   color: var(--accent-color);
+}
+@media screen and (max-width: 767.98px) {
+  .ul-clients > li > a {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .ul-clients > li > a {
+    width: 226px;
+  }
 }
 
 .footer__text-subscribe {
@@ -659,7 +731,7 @@ a {
   gap: 40px;
 }
 
-.hero-layout {
+.hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,45 +739,88 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 600px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding-left: 250px;
+    padding-right: 250px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__text {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   margin: 0 auto;
-  margin-bottom: 30px;
-  max-width: 696px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__dark-background {
   background-color: #2f303a;
-  padding: 200px 0;
 }
 
 .hero {
-  background-image: url("../images/overlay.png"), url("../images/baner.jpg");
+  background-image: url("../images/overlay.png"), url("../images/header_img_phone_x1.jpg");
   background-position: 50% 50%;
   background-color: #e5e5e5;
   background-size: cover;
   max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
   background-repeat: no-repeat;
   border: 1px solid #000000;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/overlay.png"), url("../images/header_img_phone_x2.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../images/overlay.png"), url("../images/header_img_tablet_x1.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/overlay.png"), url("../images/header_img_tablet_x2.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url("../images/overlay.png"), url("../images/header_img_desktop_x1.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/overlay.png"), url("../images/header_img_desktop_x2.jpg");
+  }
 }
 
 .hero__button {
@@ -896,68 +1011,6 @@ a {
 .portfolio__div-father {
   position: relative;
   overflow: hidden;
-}
-
-header a:hover,
-footer a:hover,
-menu:hover {
-  color: #2196f3;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-@media screen and (max-width: 1199px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-.no-padding-top {
-  padding-top: 0;
-}
-
-.container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 40px;
-}
-
-.section__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 50px;
 }
 
 .self-promotion {

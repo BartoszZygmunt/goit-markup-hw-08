@@ -1,33 +1,78 @@
-.hero-layout {
+// .hero-layout {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	align-items: center;
+// 	height: 600px;
+// }
+
+.hero__container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 600px;
+	justify-content: space-between;
+	height: 400px;
+	padding-top: 118px;
+	padding-bottom: 118px;
+	@include mq(tablet) {
+		padding-left: 150px;
+		padding-right: 150px;
+	}
+	@include mq(desktop) {
+		padding-left: 250px;
+		padding-right: 250px;
+		height: 600px;
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
 }
+
 .hero__text {
+	//phone:
+	font-family: "Roboto";
+	font-style: normal;
 	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.36;
+	font-size: 26px;
+	line-height: 1.62;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	color: rgba(255, 255, 255, 1);
+	color: #ffffff;
 	margin: 0 auto;
-	margin-bottom: 30px;
-	max-width: 696px;
+	@include mq(desktop) {
+		font-size: 44px;
+		line-height: 1.36;
+	}
 }
 .hero__dark-background {
 	background-color: getColor(background-footer-color);
-	padding: 200px 0;
+	//padding: 200px 0;
 }
 .hero {
-	background-image: url("../images/overlay.png"), url("../images/baner.jpg");
+	//phone:
+	background-image: url("../images/overlay.png"), url("../images/header_img_phone_x1.jpg");
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: url("../images/overlay.png"), url("../images/header_img_phone_x2.jpg");
+	}
+	//tablet:
+	@include mq(tablet) {
+		background-image: url("../images/overlay.png"), url("../images/header_img_tablet_x1.jpg");
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: url("../images/overlay.png"), url("../images/header_img_tablet_x2.jpg");
+		}
+	}
+	//desktop:
+	@include mq(desktop) {
+		background-image: url("../images/overlay.png"), url("../images/header_img_desktop_x1.jpg");
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: url("../images/overlay.png"), url("../images/header_img_desktop_x2.jpg");
+		}
+	}
+
 	background-position: 50% 50%;
 	background-color: getColor(background-section);
 	background-size: cover;
 	max-width: 1600px;
-	height: 600px;
+	// height: 400px;
 	margin: 0 auto;
 	background-repeat: no-repeat;
 	border: 1px solid #000000;
