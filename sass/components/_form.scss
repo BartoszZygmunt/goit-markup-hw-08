@@ -99,6 +99,11 @@
 .terms-link {
 	color: getColor(accent-color);
 }
+.agree-span {
+	@include mq(desktop, max) {
+		margin-left: 25px;
+	}
+}
 
 .button-main-form {
 	height: 50px;

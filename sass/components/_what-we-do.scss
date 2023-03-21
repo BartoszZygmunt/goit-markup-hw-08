@@ -4,7 +4,12 @@
 	justify-content: space-between;
 	align-items: flex-end;
 	gap: 30px;
-	//width: 1170px;
+}
+
+.hide-tablet {
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
 }
 
 .what-we-do__list {
