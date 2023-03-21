@@ -94,6 +94,10 @@
 	line-height: 47px;
 	letter-spacing: 0.02em;
 	color: getColor(main-text-color);
+	&:hover,
+	&:focus {
+		color: getColor(accent-color);
+	}
 }
 
 // .menu-container .menu-toggle {

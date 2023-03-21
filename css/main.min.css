@@ -1256,4 +1256,7 @@ header nav ul {
   line-height: 47px;
   letter-spacing: 0.02em;
   color: #212121;
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #2196f3;
 }/*# sourceMappingURL=main.min.css.map */
