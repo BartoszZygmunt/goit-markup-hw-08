@@ -1313,6 +1313,6 @@ header nav ul {
 .mobile-menu-socials__line {
   width: 0;
   height: auto;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
   margin-right: 10px;
 }/*# sourceMappingURL=main.min.css.map */
