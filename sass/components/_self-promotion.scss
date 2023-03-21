@@ -5,6 +5,21 @@
 	& li {
 		flex-basis: 270px;
 	}
+	@include mq(tablet, max) {
+		display: block;
+		& li {
+			margin-bottom: 30px;
+		}
+	}
+	@include mq(desktop, max) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+		& li {
+			flex-basis: 354px;
+		}
+	}
 }
 
 .self-promotion__icons-div {
@@ -15,7 +30,7 @@
 	fill: getColor(buttons-port-color);
 	background-color: getColor(buttons-port-color);
 	border-radius: 4px;
-	height: 112px;
+	height: 120px;
 }
 
 .self-promotion__label {

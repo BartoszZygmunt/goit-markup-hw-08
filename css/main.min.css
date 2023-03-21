@@ -430,10 +430,7 @@ address {
   color: #2196f3;
 }
 
-.agree-span {
-  @width : calc($width - 0.02px);
-}
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.98px) {
   .agree-span {
     margin-left: 25px;
   }
@@ -973,6 +970,31 @@ header nav ul {
   -ms-flex-preferred-size: 270px;
       flex-basis: 270px;
 }
+@media screen and (max-width: 767.98px) {
+  .self-promotion {
+    display: block;
+  }
+  .self-promotion li {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .self-promotion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .self-promotion li {
+    -ms-flex-preferred-size: 354px;
+        flex-basis: 354px;
+  }
+}
 
 .self-promotion__icons-div {
   display: -webkit-box;
@@ -988,7 +1010,7 @@ header nav ul {
   fill: #f5f4fa;
   background-color: #f5f4fa;
   border-radius: 4px;
-  height: 112px;
+  height: 120px;
 }
 
 .self-promotion__label {

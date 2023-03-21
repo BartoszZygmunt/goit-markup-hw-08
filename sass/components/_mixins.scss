@@ -7,7 +7,7 @@ $breakpoints: (
 	@if map_has_key($breakpoints, $width) {
 		$width: map-get($breakpoints, $width);
 		@if $type==max {
-			@width: calc($width - 0.02px);
+			$width: calc($width - 0.02px);
 		}
 		@media screen and (#{$type}-width: $width) {
 			@content;
