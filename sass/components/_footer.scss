@@ -8,6 +8,10 @@
 		column-gap: 165px;
 		align-items: baseline;
 	}
+	@include mq(desktop) {
+		gap: 0;
+		justify-content: space-between;
+	}
 }
 .footer__logo {
 	font-family: "Raleway", sans-serif;
@@ -30,6 +34,9 @@
 		&:hover {
 			color: getColor(accent-color);
 		}
+	}
+	@include mq(desktop) {
+		text-align: left;
 	}
 }
 
@@ -74,6 +81,9 @@
 .footer__address--margin {
 	margin-bottom: 12px;
 	text-align: center;
+	@include mq(desktop) {
+		text-align: left;
+	}
 }
 .margin-bottom-none {
 	margin-bottom: 0;
@@ -117,6 +127,9 @@
 	@include mq(tablet) {
 		width: 450px;
 	}
+	@include mq(desktop) {
+		width: 570px;
+	}
 }
 .div3__newsletter-text-top {
 	font-family: "Roboto";
@@ -130,12 +143,21 @@
 	color: getColor(secondary-text-color);
 	margin-bottom: 20px;
 	text-align: center;
+	@include mq(desktop) {
+		text-align: left;
+	}
 }
 .footer__form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	@include mq(desktop) {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 12px;
+	}
 }
 
 .footer__email {
@@ -157,6 +179,10 @@
 		line-height: 1.25;
 		letter-spacing: 0.03em;
 		color: rgba(255, 255, 255, 0.6);
+	}
+	@include mq(desktop) {
+		width: 358px;
+		margin-bottom: 0;
 	}
 }
 
