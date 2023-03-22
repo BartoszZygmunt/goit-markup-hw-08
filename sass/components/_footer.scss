@@ -4,6 +4,10 @@
 	//gap: 70px;
 	align-items: baseline;
 	justify-content: center;
+	@include mq(tablet) {
+		column-gap: 165px;
+		align-items: baseline;
+	}
 }
 .footer__logo {
 	font-family: "Raleway", sans-serif;
@@ -41,6 +45,9 @@
 	justify-content: center;
 	margin-top: 29px;
 	margin-bottom: 59px;
+	@include mq(tablet) {
+		margin-bottom: 60px;
+	}
 }
 .footer__address--link {
 	font-family: "Roboto";
@@ -107,6 +114,9 @@
 
 .footer__div3 {
 	width: calc(100% - 30px);
+	@include mq(tablet) {
+		width: 450px;
+	}
 }
 .div3__newsletter-text-top {
 	font-family: "Roboto";
