@@ -8,11 +8,10 @@
 
 .hero__container {
 	display: flex;
+	gap: 30px;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	height: 400px;
-	padding-top: 118px;
-	padding-bottom: 118px;
 	@include mq(tablet) {
 		padding-left: 150px;
 		padding-right: 150px;
@@ -21,8 +20,6 @@
 		padding-left: 250px;
 		padding-right: 250px;
 		height: 600px;
-		padding-top: 200px;
-		padding-bottom: 200px;
 	}
 }
 
