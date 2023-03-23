@@ -5,12 +5,7 @@
 	& li {
 		flex-basis: 270px;
 	}
-	@include mq(tablet, max) {
-		display: block;
-		& li {
-			margin-bottom: 30px;
-		}
-	}
+
 	@include mq(desktop, max) {
 		display: flex;
 		flex-wrap: wrap;
@@ -18,6 +13,13 @@
 		gap: 30px;
 		& li {
 			flex-basis: 354px;
+		}
+	}
+	@include mq(tablet, max) {
+		display: block;
+		& li {
+			margin-bottom: 30px;
+			//flex-basis: auto;
 		}
 	}
 }

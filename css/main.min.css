@@ -808,14 +808,6 @@ a {
   -ms-flex-preferred-size: 270px;
       flex-basis: 270px;
 }
-@media screen and (max-width: 767.98px) {
-  .self-promotion {
-    display: block;
-  }
-  .self-promotion li {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (max-width: 1199.98px) {
   .self-promotion {
     display: -webkit-box;
@@ -831,6 +823,14 @@ a {
   .self-promotion li {
     -ms-flex-preferred-size: 354px;
         flex-basis: 354px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .self-promotion {
+    display: block;
+  }
+  .self-promotion li {
+    margin-bottom: 30px;
   }
 }
 
@@ -1058,6 +1058,17 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 59px;
+}
+@media screen and (min-width: 768px) {
+  .footer__div1 {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__div1 {
+    margin-bottom: 0;
+  }
 }
 
 .footer__address {
@@ -1071,13 +1082,10 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 29px;
-  margin-bottom: 59px;
 }
-@media screen and (min-width: 768px) {
-  .footer__address {
-    margin-bottom: 60px;
-  }
+
+address {
+  margin-top: 29px;
 }
 
 .footer__address--link {
@@ -1122,6 +1130,11 @@ a {
 
 .footer__div2 {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__div2 {
+    margin-bottom: 0;
+  }
 }
 
 .footer__div2--text-be-in-us {
@@ -1466,6 +1479,13 @@ a {
 
 .mobile-menu__div {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   top: 0;
   left: 0;
   width: 100%;
@@ -1473,17 +1493,20 @@ a {
   padding: 48px 40px;
 }
 
-.mobile-menu__list {
+.mobile-menu__list:not(:last-child) {
   margin-bottom: 32px;
 }
 
 .mobile-menu__list2 {
-  margin-top: 306px;
   margin-bottom: 32px;
 }
 
 .mobile-menu__list3 {
   margin-bottom: 64px;
+}
+
+.mobile-margin-top {
+  margin-top: auto;
 }
 
 .mobile-menu__link {
@@ -1523,6 +1546,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   row-gap: 10px;
 }
 
