@@ -858,6 +858,11 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 767.98px) {
+  .self-promotion__label {
+    text-align: center;
+  }
+}
 
 .self-promotion__text {
   line-height: 1.71;

@@ -39,6 +39,9 @@
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	@include mq(tablet, max) {
+		text-align: center;
+	}
 }
 .self-promotion__text {
 	line-height: 1.71;
