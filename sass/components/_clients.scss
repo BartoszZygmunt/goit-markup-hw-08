@@ -31,11 +31,12 @@
 		&:focus {
 			color: var(--accent-color);
 		}
-		@include mq(tablet, max) {
-			width: 210px;
-		}
+
 		@include mq(desktop, max) {
 			width: 226px;
+		}
+		@include mq(tablet, max) {
+			width: 210px;
 		}
 	}
 }
